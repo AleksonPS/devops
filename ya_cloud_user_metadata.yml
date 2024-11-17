@@ -1,0 +1,11 @@
+#cloud-config
+datasource:
+  Ec2:
+    strict_id: false
+ssh_pwauth: no
+users:
+- name: alps
+  sudo: 'ALL=(ALL) NOPASSWD:ALL'
+  shell: /bin/bash
+  ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDUoqQFFL0Xj1c2V4plqyXaGt0iZ/nJ5JTxNsIbYeO00/2rhwG2JakSWzYNwExEGuLzjog4GGVphPXZZN5UQTREcbK2JRUkZDwg88/3+JWlNvi+jdllPtTmPsMGWu6RW4QkE+K9yWKpbdyYj65OgrVgHMKQup+KoWaZNAtzvW82jxJQqHvvc9PX4OQCbCKh8Sw5e086XDtVCKbLI+yrLRDp/NPmnMYE1cJ9Tta1gEnQ8bmh3bt6KvvL7l5HdGRbYKBistF+/0w8Qa7j2j9uUzLOLAM4gHF8cZ+pz/szYEL2jJVBpWNiz5Uj5Rof7c5Hub1aecIM3/fgKP4yy/o7t54ZvLHjXiLdO3Nnco8R26MxoKoIjvx4dX3a18kgXDWmrmDJdaXQDDzHmnpYvOv2m5ySSHJg996V9CQfk7eTopX3x1ir6+Y8EVfsySSdiaVKjjH/UXTOOlR+05nXCX5O5kF2XftbVo14Od7O+Id/15/fcIokxQr0aD5Rc3FR1NRHbABcrsgL9OejM5lkJaiL2B8n0bz2fmmjZtZbwaJKTM0VRFlKRdoFbPWrf8CNBs/FGrHzyoEBlPKgV9jojf620w1K16hFuqBAURUFqR6CC8DN98/5xK7Qtkbb63Ng1TY9aUSf9A2LOlFmpTi563BBsHp3V12yKbJnZDW3KijXj7alfQ== alps@serveru
